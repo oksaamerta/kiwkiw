@@ -5,7 +5,7 @@ Inspired by [elly's site](http://tilde.town/~elly/), expressly created for [my p
 
 <h3 align="center"><a href="https://riggraz.dev/no-style-please/">Try the demo out!</a></h3>
 
-<img src="https://raw.githubusercontent.com/oksaamerta.github.io/blob/master/_screenshots/simplenote-arch-oksa.png" />
+<img src="https://raw.githubusercontent.com/oksaamerta/oksaamerta.github.io/tree/master/_screenshots/simplenote-arch-oksa.png" />
 
 ## Features
 
