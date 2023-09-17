@@ -4,8 +4,8 @@
 entries:
   - title: me
     entries:
-      - title: email
-         url : oksaamerta at proton dot me
+#      - title: email
+#         url : oksaamerta at proton dot me
       - title: twitter
           url: https://twitter.com/tamanggora
 #      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
