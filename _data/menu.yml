@@ -1,17 +1,17 @@
 # For documentation on this file, see:
 # https://github.com/riggraz/no-style-please#customize-the-menu
 
-entries:
-  - title: me
-    entries:
+#entries:
+#  - title: me
+#    entries:
 #      - title: email
 #         url : oksaamerta at proton dot me
-      - title: twitter
-          url: https://twitter.com/tamanggora
+#      - title: twitter
+#          url: https://twitter.com/tamanggora
 #      - title: "used by <a href='https://riggraz.dev'>riggraz.dev</a> and <a href='https://github.com/riggraz/no-style-please/network/dependents'>many others</a>"
 
 entries :
-  - title: all posts
+  - title: posts
     post_list:
       limit: 5
       show_more: true
