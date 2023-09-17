@@ -246,6 +246,6 @@ menjadi
 Exec=/opt/Simplenote/simplenote %U --no-sandbox
 ```
 
-<img src="https://raw.githubusercontent.com/oksaamerta/oksaamerta.github.io/blob/master/_screenshots/simplenote-arch-oksa.png" />
+<img src="https://raw.githubusercontent.com/oksaamerta/oksaamerta.github.io/master/_screenshots/simplenote-arch-oksa.png" />
 
 Sekian terimakasih
