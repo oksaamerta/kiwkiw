@@ -4,7 +4,7 @@ email: oksaamerta@proton.me # email of site's author
 url: https://oksaamerta.github.io # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
-  Menulis History Kejadian Unik Kernel.
+  Menulis History Kejadian Unik Kernel dan Market.
 
 # permalink: /:slug.html
 
