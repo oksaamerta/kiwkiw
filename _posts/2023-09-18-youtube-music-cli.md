@@ -110,7 +110,7 @@ info: any updates to rustup will need to be fetched with your system package man
 
 
 
-```
+
 
 ```
 [tama@tamaoksa ~]$ rustup default stable
