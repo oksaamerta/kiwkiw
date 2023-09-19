@@ -14,4 +14,4 @@ layout: home
   <span style="color: gray; font-size: medium;">fokus untuk pelajaran sekolah + menulis tugas</span>
 </div>
 
-<span style="color: gray; font-size: medium;"> © 2022 Oks4merta</span>
+<span style="color: gray; font-size: medium;"> © 2023 Oks4merta</span>
