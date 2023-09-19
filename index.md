@@ -2,7 +2,7 @@
 layout: home
 ---
 
-[<img src="stock.png" width="313"/>](image.png)
+[<img src="stock.png" width="313"/>](stock.jpg)
 <div style="text-align: center;">
   <span style="color: gray; font-size: medium;">fokus untuk pelajaran sekolah + menulis tugas</span>
 </div>
