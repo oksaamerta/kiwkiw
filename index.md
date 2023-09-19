@@ -14,8 +14,8 @@ layout: home
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div id="tradingview_abd4d"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <div id="tradingview_dbefd"></div>
+  <div class="tradingview-widget-copyright"><a href="https://id.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.widget(
@@ -26,13 +26,14 @@ layout: home
   "timezone": "Asia/Bangkok",
   "theme": "dark",
   "style": "2",
-  "locale": "en",
+  "locale": "id",
   "enable_publishing": false,
+  "backgroundColor": "rgba(0, 0, 0, 1)",
   "gridColor": "rgba(240, 243, 250, 0)",
   "hide_top_toolbar": true,
   "save_image": false,
   "hide_volume": true,
-  "container_id": "tradingview_abd4d"
+  "container_id": "tradingview_dbefd"
 }
   );
   </script>
