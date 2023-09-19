@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<img src="https://raw.githubusercontent.com/oksaamerta/oksaamerta.github.io/master/_screenshots/stock.jpg" />
+<img src="https://raw.githubusercontent.com/oksaamerta/oksaamerta.github.io/master/_screenshots/stock.jpg width="313" height="212" />
 <div style="text-align: center;">
   <span style="color: gray; font-size: medium;">fokus untuk pelajaran sekolah + menulis tugas</span>
 </div>
