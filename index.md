@@ -14,6 +14,13 @@ layout: home
   <span style="color: gray; font-size: medium;">fokus untuk pelajaran sekolah + menulis tugas</span>
 </div>
 
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,5964,7186,74" currency="IDR" theme="dark" transparent="true" show-symbol-logo="true"></div>
+<style>
+.custom-widget {
+  width: 500px;
+  height: auto;
+}
+</style>
+
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,5964,7186,74" currency="IDR" theme="dark" transparent="true" show-symbol-logo="true" class="custom-image"></div>
 
 <span style="color: gray; font-size: medium;"> © 2021 Oks4merta</span>
