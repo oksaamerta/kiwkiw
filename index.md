@@ -4,7 +4,7 @@ layout: home
 
 <style>
 .custom-image {
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 </style>
