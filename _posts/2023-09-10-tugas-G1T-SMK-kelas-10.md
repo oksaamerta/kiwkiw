@@ -62,7 +62,8 @@ user.email=oksaamerta@proton.me
 
 pembuatan repo
 
-```[tama@tamaoksa ~]$ mkdir blog
+```
+[tama@tamaoksa ~]$ mkdir blog
 
 [tama@tamaoksa ~]$ cd blog
 
@@ -100,7 +101,7 @@ README.md
 [tama@tamaoksa blog]$ git branch -M main
 
 [tama@tamaoksa blog]$ git remote add origin https://github.com/oksaamerta/blog.git
-
+```
 
 
 coba push
