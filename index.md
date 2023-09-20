@@ -30,7 +30,7 @@ layout: home
 </div>
 <!-- TradingView Widget END -->
 
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,825,6855" currency="USD" theme="dark" transparent="true" show-symbol-logo="false"></div>
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,825,6855,5964,74,3718,16086" currency="IDR" theme="dark" transparent="false" show-symbol-logo="true"></div>
 
 <!-- Gambar Dari Root -->
 <style>
