@@ -4,14 +4,13 @@ layout: home
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div id="tradingview_3af96"></div>
+  <div id="tradingview_9b5c5"></div>
   <div class="tradingview-widget-copyright"><a href="https://id.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
   new TradingView.widget(
   {
-  "width": 600,
-  "height": 250,
+  "autosize": true,
   "symbol": "OANDA:XAUUSD",
   "interval": "240",
   "timezone": "Asia/Bangkok",
@@ -24,14 +23,14 @@ layout: home
   "hide_top_toolbar": true,
   "save_image": false,
   "hide_volume": true,
-  "container_id": "tradingview_3af96"
+  "container_id": "tradingview_9b5c5"
 }
   );
   </script>
 </div>
 <!-- TradingView Widget END -->
 
-<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="IDR" data-secondary="USD" data-ticker="true" data-rank="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="IDR"></div>
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,825,6855" currency="USD" theme="dark" transparent="true" show-symbol-logo="false"></div>
 
 <!-- Gambar Dari Root -->
 <style>
