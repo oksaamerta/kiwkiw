@@ -10,7 +10,7 @@ layout: home
 }
 </style>
 
-<img src="stonks.gif" alt="image" class="custom-image">
+<img src="journey.gif" alt="image" class="custom-image">
 <div style="text-align: center;">
 <!-- Gambar Dari Root END -->
 
