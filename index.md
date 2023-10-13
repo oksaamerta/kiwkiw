@@ -5,7 +5,7 @@ layout: home
 <!-- Gambar Dari Root -->
 <style>
 .custom-image {
-  width: 200px;
+  width: 500px;
   height: auto;
 }
 </style>
