@@ -234,6 +234,18 @@ Proceed with these changes to the system installation? [Y/n]:
 install amdgpu
 
 ```
+tama@tamagochi:~/Downloads$ ls
+amdgpu-install_5.7.50700-1_all.deb  firefox.tmp
+tama@tamagochi:~/Downloads$ sudo dpkg -i amdgpu-install_5.7.50700-1_all.deb
+[sudo] password for tama: 
+Selecting previously unselected package amdgpu-install.
+(Reading database ... 200724 files and directories currently installed.)
+Preparing to unpack amdgpu-install_5.7.50700-1_all.deb ...
+Unpacking amdgpu-install (5.7.50700-1653597.22.04) ...
+Setting up amdgpu-install (5.7.50700-1653597.22.04) ...
+```
+
+```
 tama@tamagochi:~$ amdgpu-install
 Hit:1 http://id.archive.ubuntu.com/ubuntu jammy InRelease
 Get:2 http://id.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
