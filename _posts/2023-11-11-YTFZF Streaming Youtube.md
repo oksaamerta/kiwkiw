@@ -5,7 +5,7 @@ slug: YTFZF Untuk Streaming Youtube
 
 >A POSIX script that helps you find Youtube videos (without API) and opens/downloads them using mpv/youtube-dl
 
-```
+```shell
 https://github.com/pystardust/ytfzf
 ```
 
