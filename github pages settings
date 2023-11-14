@@ -1,0 +1,827 @@
+---
+layout: post
+title:  "Konfigurasi Github Pages"
+date:   2023-10-28
+last_modified_at: 2023-11-11
+categories: 
+tags: 
+---
+
+pastikan sudah membuat repo github
+
+```
+[tama@tamagochi tamanggora]$ ls
+README.md
+```
+
+```
+[tama@tamagochi tamanggora]$ gem install bundlr jekyll
+Fetching bundlr-0.0.1.gem
+WARNING:  You don't have /home/tama/.local/share/gem/ruby/3.0.0/bin in your PATH,
+	  gem executables will not run.
+Successfully installed bundlr-0.0.1
+Parsing documentation for bundlr-0.0.1
+Installing ri documentation for bundlr-0.0.1
+Done installing documentation for bundlr after 0 seconds
+Fetching webrick-1.8.1.gem
+Fetching unicode-display_width-2.5.0.gem
+Fetching rouge-4.2.0.gem
+Fetching pathutil-0.16.2.gem
+Fetching mercenary-0.4.0.gem
+Fetching terminal-table-3.0.2.gem
+Fetching safe_yaml-1.0.5.gem
+Fetching forwardable-extended-2.6.0.gem
+Fetching liquid-4.0.4.gem
+Fetching kramdown-2.4.0.gem
+Fetching kramdown-parser-gfm-1.1.0.gem
+Fetching ffi-1.16.3.gem
+Fetching rb-inotify-0.10.1.gem
+Fetching rb-fsevent-0.11.2.gem
+Fetching listen-3.8.0.gem
+Fetching jekyll-watch-2.2.1.gem
+Fetching google-protobuf-3.25.0-x86_64-linux.gem
+Fetching sass-embedded-1.69.5-x86_64-linux-gnu.gem
+Fetching jekyll-sass-converter-3.0.0.gem
+Fetching concurrent-ruby-1.2.2.gem
+Fetching i18n-1.14.1.gem
+Fetching http_parser.rb-0.8.0.gem
+Fetching eventmachine-1.2.7.gem
+Fetching em-websocket-0.5.3.gem
+Fetching jekyll-4.3.2.gem
+Fetching colorator-1.1.0.gem
+Fetching public_suffix-5.0.3.gem
+Fetching addressable-2.8.5.gem
+Successfully installed webrick-1.8.1
+Successfully installed unicode-display_width-2.5.0
+Successfully installed terminal-table-3.0.2
+Successfully installed safe_yaml-1.0.5
+Successfully installed rouge-4.2.0
+Successfully installed forwardable-extended-2.6.0
+Successfully installed pathutil-0.16.2
+Successfully installed mercenary-0.4.0
+Successfully installed liquid-4.0.4
+Successfully installed kramdown-2.4.0
+Successfully installed kramdown-parser-gfm-1.1.0
+Building native extensions. This could take a while...
+Successfully installed ffi-1.16.3
+Successfully installed rb-inotify-0.10.1
+Successfully installed rb-fsevent-0.11.2
+Successfully installed listen-3.8.0
+Successfully installed jekyll-watch-2.2.1
+Successfully installed google-protobuf-3.25.0-x86_64-linux
+Successfully installed sass-embedded-1.69.5-x86_64-linux-gnu
+Successfully installed jekyll-sass-converter-3.0.0
+Successfully installed concurrent-ruby-1.2.2
+Successfully installed i18n-1.14.1
+Building native extensions. This could take a while...
+Successfully installed http_parser.rb-0.8.0
+Building native extensions. This could take a while...
+Successfully installed eventmachine-1.2.7
+Successfully installed em-websocket-0.5.3
+Successfully installed colorator-1.1.0
+Successfully installed public_suffix-5.0.3
+Successfully installed addressable-2.8.5
+Successfully installed jekyll-4.3.2
+Parsing documentation for webrick-1.8.1
+Installing ri documentation for webrick-1.8.1
+Parsing documentation for unicode-display_width-2.5.0
+Installing ri documentation for unicode-display_width-2.5.0
+Parsing documentation for terminal-table-3.0.2
+Installing ri documentation for terminal-table-3.0.2
+Parsing documentation for safe_yaml-1.0.5
+Installing ri documentation for safe_yaml-1.0.5
+Parsing documentation for rouge-4.2.0
+Installing ri documentation for rouge-4.2.0
+Parsing documentation for forwardable-extended-2.6.0
+Installing ri documentation for forwardable-extended-2.6.0
+Parsing documentation for pathutil-0.16.2
+Installing ri documentation for pathutil-0.16.2
+Parsing documentation for mercenary-0.4.0
+Installing ri documentation for mercenary-0.4.0
+Parsing documentation for liquid-4.0.4
+Installing ri documentation for liquid-4.0.4
+Parsing documentation for kramdown-2.4.0
+Installing ri documentation for kramdown-2.4.0
+Parsing documentation for kramdown-parser-gfm-1.1.0
+Installing ri documentation for kramdown-parser-gfm-1.1.0
+Parsing documentation for ffi-1.16.3
+Installing ri documentation for ffi-1.16.3
+Parsing documentation for rb-inotify-0.10.1
+Installing ri documentation for rb-inotify-0.10.1
+Parsing documentation for rb-fsevent-0.11.2
+Installing ri documentation for rb-fsevent-0.11.2
+Parsing documentation for listen-3.8.0
+Installing ri documentation for listen-3.8.0
+Parsing documentation for jekyll-watch-2.2.1
+Installing ri documentation for jekyll-watch-2.2.1
+Parsing documentation for google-protobuf-3.25.0-x86_64-linux
+Installing ri documentation for google-protobuf-3.25.0-x86_64-linux
+Parsing documentation for sass-embedded-1.69.5-x86_64-linux-gnu
+Installing ri documentation for sass-embedded-1.69.5-x86_64-linux-gnu
+Parsing documentation for jekyll-sass-converter-3.0.0
+Installing ri documentation for jekyll-sass-converter-3.0.0
+Parsing documentation for concurrent-ruby-1.2.2
+Installing ri documentation for concurrent-ruby-1.2.2
+Parsing documentation for i18n-1.14.1
+Installing ri documentation for i18n-1.14.1
+Parsing documentation for http_parser.rb-0.8.0
+unknown encoding name "chunked\r\n\r\n25" for ext/ruby_http_parser/vendor/http-parser-java/tools/parse_tests.rb, skipping
+Installing ri documentation for http_parser.rb-0.8.0
+Parsing documentation for eventmachine-1.2.7
+Installing ri documentation for eventmachine-1.2.7
+Parsing documentation for em-websocket-0.5.3
+Installing ri documentation for em-websocket-0.5.3
+Parsing documentation for colorator-1.1.0
+Installing ri documentation for colorator-1.1.0
+Parsing documentation for public_suffix-5.0.3
+Installing ri documentation for public_suffix-5.0.3
+Parsing documentation for addressable-2.8.5
+Installing ri documentation for addressable-2.8.5
+Parsing documentation for jekyll-4.3.2
+Installing ri documentation for jekyll-4.3.2
+Done installing documentation for webrick, unicode-display_width, terminal-table, safe_yaml, rouge, forwardable-extended, pathutil, mercenary, liquid, kramdown, kramdown-parser-gfm, ffi, rb-inotify, rb-fsevent, listen, jekyll-watch, google-protobuf, sass-embedded, jekyll-sass-converter, concurrent-ruby, i18n, http_parser.rb, eventmachine, em-websocket, colorator, public_suffix, addressable, jekyll after 20 seconds
+29 gems installed
+```
+
+```
+alternative
+
+- https://github.com/rbenv/rbenv
+- https://rvm.io/rvm/install
+```
+
+```
+[tama@tamagochi tamanggora]$ ls
+Jekyll-Paper  README.md
+```
+
+
+disini saya memakai rbenv
+
+```
+[tama@tamagochi tamanggora]$ yay rbenv
+7 aur/goenv-git r1724.0cbe222-1 (+0 0.00) 
+    Like pyenv and rbenv, but for Go.
+6 aur/rbenv-latest 0.2.1-1 (+0 0.00) 
+    Enhances rbenv with a `latest` subcommand, which prints the latest Ruby version
+5 aur/rbenv-vars 1.2.0-2 (+1 0.00) 
+    An rbenv plugin that safely sets global and per-project environment variables.
+4 aur/goenv 2.0.0beta11-1 (+0 0.00) (Out-of-date: 2023-07-29) 
+    Like pyenv and rbenv, but for Go.
+3 aur/tfenv 3.0.0-2 (+16 0.24) 
+    Terraform version manager inspired by rbenv
+2 aur/rbenv-git 1.2.0.r46.g52acbdf-1 (+7 0.00) 
+    Simple Ruby version manager
+1 aur/rbenv 1.2.0-1 (+131 0.05) (Installed)
+    Simple Ruby version manager
+==> Packages to install (eg: 1 2 3, 1-3 or ^4)
+==> 2
+AUR Explicit (1): rbenv-git-1.2.0.r46.g52acbdf-1
+:: PKGBUILD up to date, skipping download: rbenv-git
+  1 rbenv-git                                (Build Files Exist)
+==> Packages to cleanBuild?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> A
+:: Deleting (1/1): /home/tama/.cache/yay/rbenv-git
+HEAD is now at c8f7b25 upgpkg: rbenv-git 1.2.0.r46.g52acbdf-1
+Removing rbenv-git-1.2.0.r80.gd6bb1c6-1-any.pkg.tar.zst
+Removing rbenv/
+  1 rbenv-git                                (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> N
+==> Making package: rbenv-git 1.2.0.r46.g52acbdf-1 (Min 12 Nov 2023 02:51:56 )
+==> Retrieving sources...
+  -> Cloning rbenv git repo...
+Cloning into bare repository '/home/tama/.cache/yay/rbenv-git/rbenv'...
+remote: Enumerating objects: 5714, done.
+remote: Counting objects: 100% (737/737), done.
+remote: Compressing objects: 100% (305/305), done.
+remote: Total 5714 (delta 458), reused 633 (delta 414), pack-reused 4977
+Receiving objects: 100% (5714/5714), 1.78 MiB | 1.35 MiB/s, done.
+Resolving deltas: 100% (3352/3352), done.
+==> WARNING: Skipping verification of source file PGP signatures.
+==> Validating source files with sha256sums...
+    rbenv ... Skipped
+:: (1/1) Parsing SRCINFO: rbenv-git
+==> Making package: rbenv-git 1.2.0.r46.g52acbdf-1 (Min 12 Nov 2023 02:52:00 )
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Updating rbenv git repo...
+==> Validating source files with sha256sums...
+    rbenv ... Skipped
+==> Removing existing $srcdir/ directory...
+==> Extracting sources...
+  -> Creating working copy of rbenv git repo...
+Cloning into 'rbenv'...
+done.
+==> Starting pkgver()...
+==> Updated version: rbenv-git 1.2.0.r80.gd6bb1c6-1
+==> Sources are ready.
+==> Making package: rbenv-git 1.2.0.r80.gd6bb1c6-1 (Min 12 Nov 2023 02:52:02 )
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> WARNING: Using existing $srcdir/ tree
+==> Starting pkgver()...
+==> Entering fakeroot environment...
+==> Starting package()...
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> Creating package "rbenv-git"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Adding install file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: rbenv-git 1.2.0.r80.gd6bb1c6-1 (Min 12 Nov 2023 02:52:09 )
+==> Cleaning up...
+[sudo] password for tama: 
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+:: rbenv-git and rbenv are in conflict. Remove rbenv? [y/N] y
+
+Packages (2) rbenv-1.2.0-1 [removal]  rbenv-git-1.2.0.r80.gd6bb1c6-1
+
+Total Installed Size:   0,04 MiB
+Net Upgrade Size:      -0,02 MiB
+
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                        [#######################################] 100%
+(1/1) checking package integrity                                      [#######################################] 100%
+(1/1) loading package files                                           [#######################################] 100%
+(1/1) checking for file conflicts                                     [#######################################] 100%
+:: Processing package changes...
+(1/1) removing rbenv                                                  [#######################################] 100%
+Remove the following from your ~/.bashrc, if present:
+    eval "$(rbenv init -)"
+(1/1) installing rbenv-git                                            [#######################################] 100%
+Your shell must be initialized before rbenv will function correctly.
+Run the following, and consider adding it to your ~/.bashrc:
+    eval "$(rbenv init -)"
+Optional dependencies for rbenv-git
+    ruby-build [installed]
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[tama@tamagochi tamanggora]$ ruby -v
+bash: ruby: command not found
+[tama@tamagochi tamanggora]$ rbenv
+rbenv 1.2.0
+Usage: rbenv <command> [<args>...]
+
+Some useful rbenv commands are:
+   commands    List all available rbenv commands
+   local       Set or show the local application-specific Ruby version
+   global      Set or show the global Ruby version
+   shell       Set or show the shell-specific Ruby version
+   install     Install a Ruby version using ruby-build
+   uninstall   Uninstall a specific Ruby version
+   rehash      Rehash rbenv shims (run this after installing executables)
+   version     Show the current Ruby version and its origin
+   versions    List installed Ruby versions
+   which       Display the full path to an executable
+   whence      List all Ruby versions that contain the given executable
+
+See `rbenv help <command>' for information on a specific command.
+For full documentation, see: https://github.com/rbenv/rbenv#readme
+```
+
+```
+[tama@tamagochi tamanggora]$ rbenv commands
+commands
+completions
+exec
+global
+help
+hooks
+init
+install
+local
+prefix
+rehash
+root
+shell
+shims
+uninstall
+--version
+version
+version-file
+version-file-read
+version-file-write
+version-name
+version-origin
+versions
+whence
+which
+[tama@tamagochi tamanggora]$ rbenv version
+system
+[tama@tamagochi tamanggora]$ rbenv install
+Usage: rbenv install [-f|-s] [-kpv] <version> [-- <configure-args...>]
+       rbenv install [-f|-s] [-kpv] <definition-file>
+       rbenv install --list
+       rbenv install --version
+
+  -l, --list           List latest stable versions for each Ruby
+  -L, --list-all       List all local versions, including outdated ones
+  -f, --force          Allow overwriting an existing installed version
+  -s, --skip-existing  Avoid overwriting an existing installed version
+
+  ruby-build options:
+
+  -v, --verbose   Verbose mode: forward all build output to stdout/stderr
+  -p, --patch     Apply a patch from stdin before building
+  -k, --keep      Keep source tree in RBENV_BUILD_ROOT after installation
+                  (defaults to "RBENV_ROOT/sources")
+  --version       Show version of ruby-build
+
+For detailed information on installing Ruby versions with ruby-build,
+including a list of environment variables for adjusting compilation,
+see: https://github.com/rbenv/ruby-build#usage
+```
+
+
+install ruby, sesuaikan versi
+
+[tama@tamagochi tamanggora]$ rbenv install -l
+3.0.6
+3.1.4
+3.2.2
+jruby-9.4.5.0
+mruby-3.2.0
+picoruby-3.0.0
+truffleruby-23.1.1
+truffleruby+graalvm-23.1.1
+
+Only latest stable releases for each Ruby implementation are shown.
+Use `rbenv install --list-all' to show all local versions.
+[tama@tamagochi tamanggora]$ rbenv install 3.2.2
+==> Downloading ruby-3.2.2.tar.gz...
+-> curl -q -fL -o ruby-3.2.2.tar.gz "https:$TMPDIR/$TMPDIR/cache.ruby-lang.org$TMPDIR/pub$TMPDIR/ruby$TMPDIR/3.2$TMPDIR/ruby-3.2.2.tar.gz"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 19.5M  100 19.5M    0     0  1234k      0  0:00:16  0:00:16 --:--:-- 1126k
+==> Installing ruby-3.2.2...
+-> ".$TMPDIR/configure" "--prefix=$TMPDIR/home$TMPDIR/tama$TMPDIR/.rbenv$TMPDIR/versions$TMPDIR/3.2.2" --enable-shared
+-> make -j 4
+
+-> make install
+-> "$TMPDIR/home$TMPDIR/tama$TMPDIR/.rbenv$TMPDIR/versions$TMPDIR/3.2.2$TMPDIR/bin$TMPDIR/ruby" -e <SCRIPT>
+==> Installed ruby-3.2.2 to /home/tama/.rbenv/versions/3.2.2
+
+NOTE: to activate this Ruby version as the new default, run: rbenv global 3.2.2
+```
+
+```
+[tama@tamagochi tamanggora]$ rbenv global
+system
+```
+
+```
+[tama@tamagochi tamanggora]$ rbenv global 3.2.2
+```
+
+```
+[tama@tamagochi tamanggora]$ rbenv global
+3.2.2
+```
+
+```
+[tama@tamagochi ~]$ rbenv init
+# Please add the following line to your `~/.bash_profile' file,
+# then restart your terminal.
+
+eval "$(rbenv init - bash)"
+```
+
+
+edit file bash
+
+```
+[tama@tamagochi ~]$ nano .bashrc
+```
+
+
+menampilkan versi ruby
+
+```
+[tama@tamagochi ~]$ ruby -v
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-linux]
+```
+
+
+mengganti versi ruby global
+
+```
+[tama@tamagochi ~]$ rbenv
+rbenv 1.2.0
+Usage: rbenv <command> [<args>...]
+
+Some useful rbenv commands are:
+   commands    List all available rbenv commands
+   local       Set or show the local application-specific Ruby version
+   global      Set or show the global Ruby version
+   shell       Set or show the shell-specific Ruby version
+   install     Install a Ruby version using ruby-build
+   uninstall   Uninstall a specific Ruby version
+   rehash      Rehash rbenv shims (run this after installing executables)
+   version     Show the current Ruby version and its origin
+   versions    List installed Ruby versions
+   which       Display the full path to an executable
+   whence      List all Ruby versions that contain the given executable
+
+See `rbenv help <command>' for information on a specific command.
+For full documentation, see: https://github.com/rbenv/rbenv#readme
+
+[tama@tamagochi ~]$ rbenv versions
+* 2.7.2 (set by /home/tama/.rbenv/version)
+  3.2.2
+
+[tama@tamagochi ~]$ rbenv global 3.2.2
+
+[tama@tamagochi ~]$ rbenv versions
+  2.7.2
+* 3.2.2 (set by /home/tama/.rbenv/version)
+
+[tama@tamagochi ~]$ ruby -v
+ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
+```
+
+
+proses installasi tema jekyll
+
+```
+[tama@tamagochi tamanggora]$ cd Jekyll-Paper
+
+[tama@tamagochi Jekyll-Paper]$ ls
+404.html  CHANGELOG    _data        Gemfile    index.html  LICENSE  _posts        README.md
+assets    _config.yml  favicon.ico  _includes  _layouts    pages    README-CN.md  _sass
+
+[tama@tamagochi Jekyll-Paper]$ gem install bundler jekyll
+Fetching bundler-2.4.22.gem
+Successfully installed bundler-2.4.22
+Parsing documentation for bundler-2.4.22
+Installing ri documentation for bundler-2.4.22
+Done installing documentation for bundler after 0 seconds
+Fetching safe_yaml-1.0.5.gem
+Fetching unicode-display_width-2.5.0.gem
+Fetching forwardable-extended-2.6.0.gem
+Fetching terminal-table-3.0.2.gem
+Fetching rouge-4.2.0.gem
+Fetching mercenary-0.4.0.gem
+Fetching webrick-1.8.1.gem
+Fetching pathutil-0.16.2.gem
+Fetching liquid-4.0.4.gem
+Fetching kramdown-2.4.0.gem
+Fetching kramdown-parser-gfm-1.1.0.gem
+Fetching ffi-1.16.3.gem
+Fetching rb-inotify-0.10.1.gem
+Fetching rb-fsevent-0.11.2.gem
+Fetching listen-3.8.0.gem
+Fetching jekyll-watch-2.2.1.gem
+Fetching google-protobuf-3.25.0-x86_64-linux.gem
+Fetching sass-embedded-1.69.5-x86_64-linux-gnu.gem
+Fetching jekyll-sass-converter-3.0.0.gem
+Fetching concurrent-ruby-1.2.2.gem
+Fetching i18n-1.14.1.gem
+Fetching http_parser.rb-0.8.0.gem
+Fetching eventmachine-1.2.7.gem
+Fetching em-websocket-0.5.3.gem
+Fetching colorator-1.1.0.gem
+Fetching public_suffix-5.0.3.gem
+Fetching addressable-2.8.5.gem
+Fetching jekyll-4.3.2.gem
+Successfully installed webrick-1.8.1
+Successfully installed unicode-display_width-2.5.0
+Successfully installed terminal-table-3.0.2
+Successfully installed safe_yaml-1.0.5
+Successfully installed rouge-4.2.0
+Successfully installed forwardable-extended-2.6.0
+Successfully installed pathutil-0.16.2
+Successfully installed mercenary-0.4.0
+Successfully installed liquid-4.0.4
+Successfully installed kramdown-2.4.0
+Successfully installed kramdown-parser-gfm-1.1.0
+Building native extensions. This could take a while...
+Successfully installed ffi-1.16.3
+Successfully installed rb-inotify-0.10.1
+Successfully installed rb-fsevent-0.11.2
+Successfully installed listen-3.8.0
+Successfully installed jekyll-watch-2.2.1
+Successfully installed google-protobuf-3.25.0-x86_64-linux
+Successfully installed sass-embedded-1.69.5-x86_64-linux-gnu
+Successfully installed jekyll-sass-converter-3.0.0
+Successfully installed concurrent-ruby-1.2.2
+Successfully installed i18n-1.14.1
+Building native extensions. This could take a while...
+Successfully installed http_parser.rb-0.8.0
+Building native extensions. This could take a while...
+Successfully installed eventmachine-1.2.7
+Successfully installed em-websocket-0.5.3
+Successfully installed colorator-1.1.0
+Successfully installed public_suffix-5.0.3
+Successfully installed addressable-2.8.5
+Successfully installed jekyll-4.3.2
+Parsing documentation for webrick-1.8.1
+Installing ri documentation for webrick-1.8.1
+Parsing documentation for unicode-display_width-2.5.0
+Installing ri documentation for unicode-display_width-2.5.0
+Parsing documentation for terminal-table-3.0.2
+Installing ri documentation for terminal-table-3.0.2
+Parsing documentation for safe_yaml-1.0.5
+Installing ri documentation for safe_yaml-1.0.5
+Parsing documentation for rouge-4.2.0
+Installing ri documentation for rouge-4.2.0
+Parsing documentation for forwardable-extended-2.6.0
+Installing ri documentation for forwardable-extended-2.6.0
+Parsing documentation for pathutil-0.16.2
+Installing ri documentation for pathutil-0.16.2
+Parsing documentation for mercenary-0.4.0
+Installing ri documentation for mercenary-0.4.0
+Parsing documentation for liquid-4.0.4
+Installing ri documentation for liquid-4.0.4
+Parsing documentation for kramdown-2.4.0
+Installing ri documentation for kramdown-2.4.0
+Parsing documentation for kramdown-parser-gfm-1.1.0
+Installing ri documentation for kramdown-parser-gfm-1.1.0
+Parsing documentation for ffi-1.16.3
+Installing ri documentation for ffi-1.16.3
+Parsing documentation for rb-inotify-0.10.1
+Installing ri documentation for rb-inotify-0.10.1
+Parsing documentation for rb-fsevent-0.11.2
+Installing ri documentation for rb-fsevent-0.11.2
+Parsing documentation for listen-3.8.0
+Installing ri documentation for listen-3.8.0
+Parsing documentation for jekyll-watch-2.2.1
+Installing ri documentation for jekyll-watch-2.2.1
+Parsing documentation for google-protobuf-3.25.0-x86_64-linux
+Installing ri documentation for google-protobuf-3.25.0-x86_64-linux
+Parsing documentation for sass-embedded-1.69.5-x86_64-linux-gnu
+Installing ri documentation for sass-embedded-1.69.5-x86_64-linux-gnu
+Parsing documentation for jekyll-sass-converter-3.0.0
+Installing ri documentation for jekyll-sass-converter-3.0.0
+Parsing documentation for concurrent-ruby-1.2.2
+Installing ri documentation for concurrent-ruby-1.2.2
+Parsing documentation for i18n-1.14.1
+Installing ri documentation for i18n-1.14.1
+Parsing documentation for http_parser.rb-0.8.0
+unknown encoding name "chunked\r\n\r\n25" for ext/ruby_http_parser/vendor/http-parser-java/tools/parse_tests.rb, skipping
+Installing ri documentation for http_parser.rb-0.8.0
+Parsing documentation for eventmachine-1.2.7
+Installing ri documentation for eventmachine-1.2.7
+Parsing documentation for em-websocket-0.5.3
+Installing ri documentation for em-websocket-0.5.3
+Parsing documentation for colorator-1.1.0
+Installing ri documentation for colorator-1.1.0
+Parsing documentation for public_suffix-5.0.3
+Installing ri documentation for public_suffix-5.0.3
+Parsing documentation for addressable-2.8.5
+Installing ri documentation for addressable-2.8.5
+Parsing documentation for jekyll-4.3.2
+Installing ri documentation for jekyll-4.3.2
+Done installing documentation for webrick, unicode-display_width, terminal-table, safe_yaml, rouge, forwardable-extended, pathutil, mercenary, liquid, kramdown, kramdown-parser-gfm, ffi, rb-inotify, rb-fsevent, listen, jekyll-watch, google-protobuf, sass-embedded, jekyll-sass-converter, concurrent-ruby, i18n, http_parser.rb, eventmachine, em-websocket, colorator, public_suffix, addressable, jekyll after 16 seconds
+29 gems installed
+
+A new release of RubyGems is available: 3.4.10 → 3.4.22!
+Run `gem update --system 3.4.22` to update your installation.
+```
+
+
+proses bundle install 
+
+```
+[tama@tamagochi tamanggora]$ bundle install
+Bundle complete! 8 Gemfile dependencies, 31 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+
+[tama@tamagochi tamanggora]$ bundle update
+Fetching gem metadata from https://rubygems.org/............
+Resolving dependencies...@
+Bundle updated!
+
+[tama@tamagochi tamanggora]$ bundle --help
+
+[tama@tamagochi tamanggora]$ bundle exec jekyll serve
+bundler: failed to load command: jekyll (/home/tama/.rbenv/versi@ons/3.2.2/bin/jekyll)
+<internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require': cannot load such file -- rexml/parsers/baseparser (LoadError)
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/html.rb:10:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown/html.rb:10:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown/paragraph.rb:14:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:345:in `<class:Kramdown>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:60:in `<module:Parser>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:19:in `<module:Kramdown>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:17:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll/converters/smartypants.rb:3:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:13:in `block in require_all'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:12:in `each'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:12:in `require_all'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:194:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/exe/jekyll:8:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/bin/jekyll:25:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/bin/jekyll:25:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:58:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:58:in `kernel_load'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:492:in `exec'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:34:in `dispatch'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:28:in `start'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.4.22/exe/bundle:37:in `block in <top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.4.22/exe/bundle:29:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/bin/bundle:25:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/bin/bundle:25:in `<main>'
+```
+
+
+bundle install mengalami error
+
+coba fix, setelah nyari di forum
+
+```
+[tama@tamagochi tamanggora]$ gem install webrick jekyll-mentions
+```
+
+```
+[tama@tamagochi tamanggora]$ bundle add webrick
+```
+
+
+edit gem file
+
+```
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.11"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-archives"
+  gem "jekyll-seo-tag"
+  gem "webrick"
+  gem "jekyll-mentions", "1.6.0"
+end
+```
+
+```
+[tama@tamagochi tamanggora]$ bundle install
+Fetching gem metadata from https://rubygems.org/.........
+Resolving dependencies...
+Fetching minitest 5.20.0
+Fetching zeitwerk 2.6.12
+Fetching racc 1.7.3
+Fetching thread_safe 0.3.6
+Installing zeitwerk 2.6.12
+Installing racc 1.7.3 with native extensions
+Installing minitest 5.20.0
+Installing thread_safe 0.3.6
+Fetching tzinfo 1.2.11
+Installing tzinfo 1.2.11
+Fetching activesupport 6.0.6.1
+Installing activesupport 6.0.6.1
+Bundle complete! 9 Gemfile dependencies, 40 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+```
+
+coba jalanin lagi
+
+```
+[tama@tamagochi tamanggora]$ bundle exec jekyll serve
+bundler: failed to load command: jekyll (/home/tama/.rbenv/versions/3.2.2/bin/jekyll)
+<internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require': cannot load such file -- rexml/parsers/baseparser (LoadError)
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/html.rb:10:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown/html.rb:10:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown/paragraph.rb:14:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:345:in `<class:Kramdown>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:60:in `<module:Parser>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:19:in `<module:Kramdown>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/kramdown-1.17.0/lib/kramdown/parser/kramdown.rb:17:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll/converters/smartypants.rb:3:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:13:in `block in require_all'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:12:in `each'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:12:in `require_all'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/lib/jekyll.rb:194:in `<top (required)>'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from <internal:/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-3.8.7/exe/jekyll:8:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/bin/jekyll:25:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/bin/jekyll:25:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:58:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:58:in `kernel_load'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli/exec.rb:23:in `run'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:492:in `exec'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:34:in `dispatch'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/cli.rb:28:in `start'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.4.22/exe/bundle:37:in `block in <top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/bundler-2.4.22/exe/bundle:29:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/bin/bundle:25:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/bin/bundle:25:in `<main>'
+```
+
+```
+[tama@tamagochi tamanggora]$ jekyll
+/home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:304:in `check_for_activated_spec!': You have already activated i18n 1.14.1, but your Gemfile requires i18n 0.9.5. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:25:in `block in setup'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/spec_set.rb:165:in `each'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/spec_set.rb:165:in `each'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:24:in `map'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler/runtime.rb:24:in `setup'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/site_ruby/3.2.0/bundler.rb:162:in `setup'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-4.3.2/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
+	from /home/tama/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/jekyll-4.3.2/exe/jekyll:11:in `<top (required)>'
+	from /home/tama/.rbenv/versions/3.2.2/bin/jekyll:25:in `load'
+	from /home/tama/.rbenv/versions/3.2.2/bin/jekyll:25:in `<main>'
+```
+
+>You have already activated i18n 1.14.1, but your Gemfile requires i18n 0.9.5. Prepending `bundle exec` to your command may solve this
+
+
+masih error, coba dengan cara lain dari forum
+
+pake add "webrick"
+
+```
+[tama@tamagochi tamanggora]$ bundle add webrick
+```
+
+update bundle
+
+```
+[tama@tamagochi tamanggora]$ bundle update
+Fetching gem metadata from https://rubygems.org/..........
+Resolving dependencies...
+Fetching bigdecimal 3.1.4
+Fetching base64 0.2.0
+Fetching mutex_m 0.2.0
+Fetching rexml 3.2.6
+Installing base64 0.2.0
+Installing mutex_m 0.2.0
+Using mercenary 0.4.0 (was 0.3.6)
+Using rouge 4.2.0 (was 3.30.0)
+Fetching drb 2.2.0
+Using i18n 1.14.1 (was 0.9.5)
+Using tzinfo 2.0.6 (was 1.2.11)
+Using jekyll-sass-converter 3.0.0 (was 1.5.2)
+Installing bigdecimal 3.1.4 with native extensions
+Installing rexml 3.2.6
+Using kramdown 2.4.0 (was 1.17.0)
+Using jekyll 4.3.2 (was 3.8.7)
+Installing drb 2.2.0
+Using activesupport 7.1.2 (was 6.0.6.1)
+Bundle updated!
+```
+
+coba jalankan
+
+```
+[tama@tamagochi tamanggora]$ bundle exec jekyll serve
+Configuration file: /home/tama/tamanggora/_config.yml
+            Source: /home/tama/tamanggora
+       Destination: /home/tama/tamanggora/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.515 seconds.
+ Auto-regeneration: enabled for '/home/tama/tamanggora'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+```
+
+Done, Sekian.
