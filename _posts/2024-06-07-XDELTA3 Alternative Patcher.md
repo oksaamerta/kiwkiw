@@ -88,4 +88,6 @@ sekarang coba aku mainin game yang telah di patch,
 
 <img src="https://raw.githubusercontent.com/oksaamerta/oksaamerta.github.io/master/_screenshots/xdelta3.png" />
 
+saya lebih cocok pake duckstation daripada pakai epsxe, kaena stick xbox bisa terkoneksi dengan normal pada wireless bluetooth.
+
 Sekian
